@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 40px;
+    background-color: aliceblue;
+    box-shadow: 5px 10px 18px #888888;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.left-container {
+    /* transition: width 0.5s ease-in-out; */
+    width: 100%;
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    border: none;
+}
+
+h2 {
+    font-size: 32px;
+    color: white;
+}
+
+.container span {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.rm-fw {
+    font-weight: normal !important;
+}
+
+.component {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.value {
+    flex: 1;
+}
+
+.status {
+    width: 40px;
+    height: 40px;
+    scale: 1.5;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.green::before {
+    content: '✔';
+    color: green;
+}
+
+.red::before {
+    content: '✖';
+    color: red;
+}
+
+/* Navbar */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+li {
+    display: inline-block;
+}
+
+/* Styling for the logo images */
+#left-logo,
+#right-logo {
+    width: 6vw;
+}
+
+#left-logo {
+    margin-left: 40px;
+}
+
+#right-logo {
+    margin-right: 40px;
+}

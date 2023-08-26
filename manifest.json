@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "System Checker",
+    "version": "1.0.0",
+    "icons": {
+        "128": "download.jpg"
+    },
+    "description": "Extension which returns the Processor name, Ram size and Screen resolution to webpage",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_end",
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "system.cpu",
+        "system.memory",
+        "system.display"
+    ]
+}
